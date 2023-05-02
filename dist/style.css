@@ -730,6 +730,13 @@ h1,h2,h3,h4,h5{
   }
 }
 
+.size-selector input:checked + label{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 48 87 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .invisible{
   visibility: hidden;
 }
@@ -1342,12 +1349,6 @@ h1,h2,h3,h4,h5{
   transition-duration: 300ms;
 }
 
-/* @layer components{
-   .size-selector input:checked + label{
-    @apply bg-primary text-white;
-   }
-} */
-
 .hover\:bg-gray-100:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -1398,4 +1399,4 @@ h1,h2,h3,h4,h5{
 
 .group:hover .group-hover\:opacity-100{
   opacity: 1;
-}
+} 
